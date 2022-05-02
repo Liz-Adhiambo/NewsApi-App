@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Hello World </h1>
+{%for sources in sources%}
+     
+     <h3>{{sources.id}}</h3>
+     <p>{{sources.name}}</p>
+     <p><a href="{{sources.url}}">{{sources.url}}</a></p>
+     <p>{{sources.country}}</p>
+     <p>{{sources.description}}</p>
+     
+    {%endfor%}
+
+    {% endblock %} 
