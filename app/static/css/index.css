@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Jost:wght@100;200&family=Libre+Bodoni&family=Playfair+Display&display=swap');
 
 
+h1{
+    font-family: 'Libre Bodoni', serif;
+    color: rgb(21, 122, 122);
+}
 h3{
     font-family: 'Libre Bodoni', serif;
-    color: rgb(8, 10, 10);
+    color: rgb(21, 122, 122);
 }
+
+
 
 .card{
     width: 800px;
@@ -15,4 +21,19 @@ h3{
     margin: 0 auto; 
     float: none; 
     
+}
+
+#brand{
+    font-family: 'Playfair Display', serif;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(21, 122, 122);
+}
+
+a{
+    
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
 }
