@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <hr>
+    <h3>Welcome to the Sports News</h3>
+</div>
+{% for sport in sports %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <div class="card mt-3" id="cards">
+            <img src="{{ sport.urlToImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">{{sport.title}}</h3>
+                <p class="card-text">{{ sport.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{sport.url}}">
+                    <h3>Read more>></h5>
+                </a>
+                <small class="text-muted">Last updated {{sport.publishedAt}}</small>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+    {% endblock %}

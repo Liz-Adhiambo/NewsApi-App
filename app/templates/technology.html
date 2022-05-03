@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <hr>
+    <h3>Welcome to the Technology News</h3>
+</div>
+{% for technology in technologies %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <div class="card mt-3" id="cards">
+            <img src="{{ technology.urlToImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">{{technology.title}}</h3>
+                <p class="card-text">{{ technology.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{technology.url}}">
+                    <h3>Read more>></h5>
+                </a>
+                <small class="text-muted">Last updated {{technology.publishedAt}}</small>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+    {% endblock %}
