@@ -35,8 +35,8 @@ def everything():
 @app.route('/business')
 def business():
     
-    businesses = get_everything('business')
-    return render_template('business.html', businesses=businesses)
+    Business = get_everything('business')
+    return render_template('business.html', Business=Business)
 
 @app.route('/technology')
 def technology():

@@ -5,3 +5,14 @@ h3{
     font-family: 'Libre Bodoni', serif;
     color: rgb(8, 10, 10);
 }
+
+.card{
+    width: 800px;
+   
+}
+
+.card {
+    margin: 0 auto; 
+    float: none; 
+    
+}
