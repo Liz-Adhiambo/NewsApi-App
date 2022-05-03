@@ -1,14 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1> Hello World </h1>
+<h1> World News.com <span> sources</span> </h1>
 {%for sources in sources%}
-     
-     <h3>{{sources.id}}</h3>
-     <p>{{sources.name}}</p>
-     <p><a href="{{sources.url}}">{{sources.url}}</a></p>
-     <p>{{sources.country}}</p>
-     <p>{{sources.description}}</p>
-     
-    {%endfor%}
+<div class="container p-5">
+     <div class="row">
+          <div class="col">
+               <h3> Source Id:{{sources.id}}</h3>
+                    <br>
+               
+                    <p> Source Name:{{sources.name}}</p>
+               
+               <p> Source Link:<a href="{{sources.url}}">{{sources.url}}</a></p>
+               <br>
+               <p> Country: {{sources.country}}</p>
+               <br>
+               <p>Source Description:{{sources.description}}</p>
+          </div>
+     </div>
+</div>
 
-    {% endblock %} 
+{%endfor%}
+
+{% endblock %}

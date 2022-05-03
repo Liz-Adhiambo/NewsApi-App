@@ -1,13 +1,30 @@
 {% extends 'base.html' %}
+
+<!-- Styles block -->
+
+
+
+
 {% block content %}
-<h3>Welcome To WorldNews.com</h3>
-
+<h3 style="font-family: 'Libre Bodoni', serif; text-align: center;">Welcome To WorldNews.com</h3>
 {%for articles in articles%}
+<div class="container">
+    <div class="row col-md-10">
+        <div class="card-deck">
+            <div class="card mb-5">
+                <img src="{{ articles.urlToImage}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">{{articles.title}}</h3>
+                    <p class="card-text">{{ articles.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated {{articles.publishedAt}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+    {% endblock%}
 
 
-<img src="{{ articles.urlToImage}}" alt="">
-<h3>{{articles.title}}</h3>
-<p>{{ articles.description}}</p>
-{%endfor%}
-{% endblock%}
-<p>worldnews</p>
+   
