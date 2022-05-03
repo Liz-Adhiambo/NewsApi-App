@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <hr>
+    <h3>Welcome to the Entertainment News</h3>
+</div>
+{% for entertainment in entertainments %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <div class="card mt-3" id="cards">
+            <img src="{{ entertainment.urlToImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">{{entertainment.title}}</h3>
+                <p class="card-text">{{ entertainment.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{entertainment.url}}">
+                    <h3>Read more>></h5>
+                </a>
+                <small class="text-muted">Last updated {{entertainment.publishedAt}}</small>
+            </div>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+    {% endblock %}
