@@ -1,24 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1> World News.com <span> sources</span> </h1>
-{%for sources in sources%}
-<div class="container p-5">
-     <div class="row">
-          <div class="col">
-               <h3> Source Id:{{sources.id}}</h3>
-                    <br>
-               
-                    <p> Source Name:{{sources.name}}</p>
-               
-               <p> Source Link:<a href="{{sources.url}}">{{sources.url}}</a></p>
-               <br>
-               <p> Country: {{sources.country}}</p>
-               <br>
-               <p>Source Description:{{sources.description}}</p>
-          </div>
-     </div>
-</div>
+<h2> World News.com <span> sources</span> </h2>
 
+
+{%for source in sources%}
+<div class="container-fluid" id="sources">
+
+
+     <ul class="">
+          <li class="card card1 mt-3 mb-3" id="sources">
+               <div class="card-body " id="cards">
+                    <h6 class="card-title">{{source.name}}</h6>
+                    <hr>
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text" style="height: 7rem;overflow: hidden;">{{source.description}}.</p>
+                    <a href="{{source.url}}" class="card-link">Visit Website</a>
+                   
+               </div>
+          </li>
+     </ul>
+
+</div>
 {%endfor%}
 
 {% endblock %}

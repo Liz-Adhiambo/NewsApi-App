@@ -37,3 +37,20 @@ a{
     text-decoration: none;
     font-family: 'Playfair Display', serif;
 }
+
+#sources{
+    
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+h2{
+    color:black;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#cards{
+    background-color: rgb(21, 122, 122);
+}
+
