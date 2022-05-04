@@ -62,4 +62,3 @@ def science():
     sciences = get_everything('science') 
     return render_template('science.html', sciences = sciences)
 
-

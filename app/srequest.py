@@ -40,4 +40,3 @@ def process_results(sources_list):
 
 
 
-
