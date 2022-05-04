@@ -6,13 +6,13 @@ News = news.News
 Everything=news.Everything
 
 # Getting api key
-api_key = app.config['NEWS_API_KEY']
+api_key = '77778d372be048dc9186f0621247ab9f'
 
 # Getting the movie base url
-base_url = app.config['NEWS_BASE_URL']
+base_url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey={}'
 
 #evrything on news API
-all_url = app.config['ALL_URL']
+all_url = 'https://newsapi.org/v2/top-headlines?category={}&language=en&apiKey={}'
 
 
 def get_news():

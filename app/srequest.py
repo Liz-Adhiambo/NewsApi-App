@@ -6,7 +6,7 @@ from .models import news
 
 sources=news.Sources
 
-apikey = app.config['NEWS_API_KEY']
+apikey = '77778d372be048dc9186f0621247ab9f'
 baseurl = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'
 def get_sources():
     get_sources_url= baseurl.format(apikey)
