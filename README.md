@@ -14,7 +14,7 @@
 This is a web application that uses NEWSAPI to fetch news articles from various sources and in different categories as well. The app is built on Flask framework.
 
 ## Live preview
-You can view the site at:
+You can view the site at:https://liz-worldnews.herokuapp.com/
 
 ## Setup Instructions and Installation
 
