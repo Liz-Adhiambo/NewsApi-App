@@ -1,6 +1,6 @@
 class Config:
     '''
-    General configuration parent class
+    General configuration parent Class
     '''
     
     NEWS_BASE_URL='https://newsapi.org/v2/top-headlines?country=us&apiKey={}'
