@@ -1,6 +1,14 @@
 # World-News.com
 <img src="./app/static/Screenshot from 2022-05-04 02-25-13.png">
 
+## Design
+<img src="./app/static/Screenshot from 2022-05-04 02-26-58.png">
+<img src="./app/static/Screenshot from 2022-05-04 02-25-25.png">
+
+
+
+
+
 
 ## Description
 This is a web application that uses NEWSAPI to fetch news articles from various sources and in different categories as well. The app is built on Flask framework.
