@@ -50,7 +50,22 @@ h2{
     text-align: center;
 }
 
-#cards{
+#cardis{
     background-color: rgb(21, 122, 122);
 }
 
+span{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.fab{
+    color: black;
+}
+
+.footer {
+    background-color: rgb(13, 150, 131);
+    color: white;
+    text-align: center;
+ }

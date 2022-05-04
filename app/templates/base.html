@@ -21,79 +21,106 @@
 <body>
 
   <!-- Image and text -->
-<nav class="navbar navbar-light">
-  <a class="navbar-brand" href="#" id="brand">
-    World-News.com
-  </a>
-</nav>
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#" id="brand">
+      World- <span>News.com</span>
+    </a>
+  </nav>
 
 
 
-  
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg   sticky-top " style="background-color:rgb(21, 122, 122);">
-  <!-- Container wrapper -->
-  <div class="container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg   sticky-top " style="background-color:rgb(21, 122, 122);">
+    <!-- Container wrapper -->
+    <div class="container">
 
 
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-      <!-- Left links -->
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('index') }}">Home</a>
-        </li>
-        <!-- <li class="nav-item">
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          </li>
+          <!-- <li class="nav-item">
         </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('business') }}">Business</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('technology') }}">Technology</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('entertainment') }}">Entertainment</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('sports') }}">Sports</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('science') }}">Science</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/sources">Sources</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('business') }}">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('technology') }}">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('entertainment') }}">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('sports') }}">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('science') }}">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sources">Sources</a>
+          </li>
+        </ul>
+        <!-- Left links -->
 
-     
+
+      </div>
+      <!-- Collapsible wrapper -->
     </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
 
 
 
-{% block content %}
-   {% block styles%}
+  {% block content %}
+  {% block styles%}
 
-   {% endblock%}
-{% endblock %}
+  {% endblock%}
+  {% endblock %}
+
+  <!--footer-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer">
+            <footer>
+             
+                <p>
+                  Home
+                </p>
+                <p>
+                  Contact Us
+                </p>
+                <p>
+                  Entertainment
+                </p>
+                <p>
+                  Top News
+                </p>
+              
+              <div class="footer-copyright text-center py-3">© 2022 Copyright: WorldNews.com
+              </div>
+            </div>
+            </div>
+            
+            </div>
+            </footer>
+            
+    </div>
+  </section>
+  <!-- Footer -->
 </body>
+
 
 </html>
